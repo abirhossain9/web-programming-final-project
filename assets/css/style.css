@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #071930;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #071930;
+    color: white;
+    padding: 30px 0; 
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f57f23;
+}
+
+#video-section {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust the height as needed */
+    overflow: hidden;
+    margin: 0;
+}
+
+#video-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.video-overlay h1 {
+    font-size: 48px;
+    color: #f9f7f6;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.service-container, .product-container, .review-container, .delivery-container, .payment-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service, .product, .review, .delivery-method, .payment-method {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px); /* Adjust width calculation to prevent overflow */
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #f57f23;
+}
+
+footer {
+    background-color: #071930;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+#map-container {
+    text-align: center;
+    overflow: hidden; /* Hide any overflow */
+}
+
+#map-container iframe {
+    width: 100%; /* Make sure the iframe fills its container */
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+    height: 450px; /* Set a fixed height or adjust as needed */
+}
