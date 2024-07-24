@@ -100,6 +100,14 @@ section {
     margin-bottom: 10px;
 }
 
+.product-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
 h2 {
     text-align: center;
     color: #f57f23;
