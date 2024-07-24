@@ -50,7 +50,7 @@ nav ul li a:hover {
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(33% - 40px); /* Adjust width calculation for proper spacing */
+    width: calc(33% - 40px);
     box-sizing: border-box;
 }
 
